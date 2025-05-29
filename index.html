@@ -1,0 +1,33 @@
+/*10. Create a Contact Manager Application 
+o Build an application that allows users to add, edit, and delete contact 
+information. 
+o Use HTML to structure the content, CSS to style the website, and 
+JavaScript to add interactive elements. 
+o Make at least five git commits, ensuring each commit reflects significant 
+progress 
+o Host the website on GitHub Pages. */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📇 Contact Manager</h1>
+    
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="tel" id="phone" placeholder="Phone" required />
+      <button type="submit">Add Contact</button>
+    </form>
+
+    <div id="contactList" class="contacts"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
